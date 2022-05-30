@@ -1,5 +1,5 @@
 <?php 
-    require_once "src/funcoes-alunos.php";
+    require_once "../src/funcoes-alunos.php";
     $listaDeAlunos = lerAlunos($conexao);
 
     // dump($listaDeProdutos);
@@ -12,7 +12,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lista de alunos - Exercício CRUD com PHP e MySQL</title>
-<link href="css/style.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -27,7 +27,7 @@ Obs.: não se esqueça de criar também os links dinâmicos para
 as páginas de atualização e exclusão. -->
 
 
-    <p><a href="index.php">Voltar ao início</a></p>
+    <p><a href="../index.php">Voltar ao início</a></p>
 
     <div class="alunos">
             
@@ -59,6 +59,6 @@ as páginas de atualização e exclusão. -->
     </div>
 
 </div>
-
+    <script src="../src/excluir.js"></script>
 </body>
 </html>

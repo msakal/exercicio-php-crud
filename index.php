@@ -13,8 +13,8 @@
     <h2>Gerenciamento de alunos, notas, médias e aprovação/reprovação</h2>
     <hr>
     <ul>
-        <li><a href="visualizar.php">Visualizar Alunos</a></li>
-        <li><a href="inserir.php">Inserir novo aluno</a></li>
+        <li><a href="alunos/visualizar.php">Visualizar Alunos</a></li>
+        <li><a href="alunos/inserir.php">Inserir novo aluno</a></li>
     </ul>
 </div>
 

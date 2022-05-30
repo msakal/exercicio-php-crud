@@ -1,7 +1,7 @@
 <?php
     
     // Chamada inicial para Montar a 'Lista de Fabricantes'
-    require_once "src/funcoes-alunos.php";    
+    require_once "../src/funcoes-alunos.php";    
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $aluno = lerUmAluno($conexao, $id);
 
@@ -11,11 +11,9 @@
         $primeira = filter_input(INPUT_POST, 'primeira', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         $segunda = filter_input(INPUT_POST, 'segunda', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
         
-        calcMedia($primeira, $segunda);
-        
-        calcSituacao($media);
+        $media = calcMedia($primeira, $segunda);
+        $situacao = calcSituacao($media);
 
-        
         atualizarAluno($conexao, $id, $nome, $primeira, $segunda, $media, $situacao);
     
         header("location:visualizar.php");
@@ -30,7 +28,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atualizar dados - Exercício CRUD com PHP e MySQL</title>
-<link href="css/style.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
