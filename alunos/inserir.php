@@ -20,8 +20,6 @@
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,28 +29,36 @@
 <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<main class="container">
 	<h1>Cadastrar um novo aluno</h1>
     <hr>
     		
-    <p>Utilize o formulário abaixo para cadastrar um novo aluno.</p>
-
-	<form action="#" method="post">
-	    <p><label for="nome">Nome:</label>
-	    <input type="text" id="nome" name="nome" required></p>
-        
-      <p><label for="primeira">Primeira nota:</label>
-	    <input type="number" id="primeira" name="primeira" step="0.1" min="0.0" max="10" required></p>
-	    
-	    <p><label for="segunda">Segunda nota:</label>
-	    <input type="number" id="segunda" name="segunda" step="0.1" min="0.0" max="10" required></p>
-	    
-      <button type="submit" name="inserir">Cadastrar aluno</button>
-	</form>
-
+    <h4>Utilize o formulário abaixo para cadastrar um novo aluno.</h4>
+    <div class="form">
+        <form action="" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div>
+                <label for="primeira">Primeira nota:</label>
+                <input type="number" id="primeira" name="primeira" step="0.1" min="0.0" max="10" required>
+            </div>
+            
+            <div>
+                <label for="segunda">Segunda nota:</label>
+                <input type="number" id="segunda" name="segunda" step="0.1" min="0.0" max="10" required>
+            </div>
+            
+            <div>
+                <button type="submit" name="inserir">Cadastrar aluno</button>
+            </div>
+        </form>
+    </div>
     <hr>
     <p><a href="../index.php">Voltar ao início</a></p>
-</div>
+</main>
 
 </body>
 </html>

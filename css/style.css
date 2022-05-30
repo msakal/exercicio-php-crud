@@ -1,4 +1,4 @@
-html { font-size: 16px;}
+html { font-size: 16px; }
 body { font-family: "Segoe UI", Arial, sans-serif; }
 
 .container {
@@ -16,3 +16,88 @@ a {
 h2 a { font-size: 0.9rem;}
 
 a:hover, a:focus { text-decoration: underline;}
+
+
+/* Visualizar */
+table {
+    border-collapse: collapse;
+    border: black 2px solid;
+}
+
+tr {
+    border: black 2px solid;
+}
+th {
+    background: rgb(230, 222, 222);
+    color: rgb(145, 117, 117);
+}
+.notas {
+    border: black 2px solid;
+}
+td {
+    border: black 2px solid;
+    background-color: var(--colorfundo);	
+}
+.center {
+    text-align: center;
+}
+.atualziar {
+    color: green;
+}
+.excluir {
+    color: red;
+}
+.sitAluno {
+    --colorfundo: rgb(209, 248, 209);
+}
+
+/* Consulta e Inserção */
+/* Form */
+main h4, div h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+    color: #141291;
+}
+.form {
+    box-sizing: border-box;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+.form label {
+    font-weight: bold;
+    border-bottom: 1px solid #ad73d1;
+    margin-bottom: 20px;
+    width: 20%;
+    color: rgb(65, 64, 64);
+    display: inline-block;  /* ajusta os dois elementos na mesma linha  */
+} 
+.form input {
+    border-radius: 5px;
+     /* cor de sombra - desl. x, desl. y, desfoque da sombra, tamanho da sombra.  */
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+    height: 30px;
+    width: 70%;
+    border: solid 1px #300040;
+}
+.form input:hover {
+    background-color: #fae7e7;
+}
+.form button[type=submit] {
+    border: #5a0506 2px solid;
+    background-image: linear-gradient(#5c6bc0, #141291);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-left: 40%;
+}
+
+/* Table - Visualizar */
+.alunos {
+    box-sizing: border-box;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}

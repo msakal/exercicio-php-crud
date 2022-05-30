@@ -106,14 +106,19 @@ require_once "conecta.php";
 
 
 
-
+    function corDeFundo($media) {
+        $cor = "--colorFundo: green;";
+        if ( $media < 7 ) {
+            $cor = "--colorFundo: red;";
+        }
+    }
 
 
     // Cálculo da Média
     function calcMedia(float $primeira, float $segunda):float {
         $media = ( ( $primeira + $segunda ) / 2 );
         
-        return $media; 
+        return $media;
     };
 
     // Retorna Situação (Aprovado/Reprovado)

@@ -31,49 +31,49 @@
 <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<main class="container">
     <h1>Atualizar dados do aluno </h1>
     <hr>
     		
-    <p>Utilize o formulário abaixo para atualizar os dados do aluno.</p>
+    <h4>Utilize o formulário abaixo para atualizar os dados do aluno.</h4>
 
+    <div class="form">
 
+        <form action="" method="post">
+            
+            <p><label for="nome">Nome:</label>
+            <input value="<?=$aluno['nome']?>" type="text" name="nome" id="nome" required></p>
+            
+            <p><label for="primeira">Primeira nota:</label>
+            <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" required></p>
+            
+            <p><label for="segunda">Segunda nota:</label>
+            <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" required></p>
 
-    <form action="" method="post">
-        
-	    <p><label for="nome">Nome:</label>
-	    <input value="<?=$aluno['nome']?>" type="text" name="nome" id="nome" required></p>
-        
-        <p><label for="primeira">Primeira nota:</label>
-	    <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" required></p>
-	    
-	    <p><label for="segunda">Segunda nota:</label>
-	    <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" required></p>
+            <p>
+            <!-- Campo somente leitura e desabilitado para edição.
+            Usado apenas para exibição do valor da média -->
+                <label for="media">Média:</label>
+                <input value="<?=$aluno['media']?>" name="media" type="number" id="media" step="0.1" min="0.0" max="10" readonly disabled>
+            </p>
 
-        <p>
-        <!-- Campo somente leitura e desabilitado para edição.
-        Usado apenas para exibição do valor da média -->
-            <label for="media">Média:</label>
-            <input value="<?=$aluno['media']?>" name="media" type="number" id="media" step="0.1" min="0.0" max="10" readonly disabled>
-        </p>
-
-        <p>
-        <!-- Campo somente leitura e desabilitado para edição 
-        Usado apenas para exibição do texto da situação -->
-            <label for="situacao">Situação:</label>
-	        <input value="<?=$aluno['situacao']?>" type="text" name="situacao" id="situacao" readonly disabled>
-        </p>
-	    
-        <button type="submit"  name="atualizar-dados">Atualizar dados do aluno</button>
-	</form>    
-    
+            <p>
+            <!-- Campo somente leitura e desabilitado para edição 
+            Usado apenas para exibição do texto da situação -->
+                <label for="situacao">Situação:</label>
+                <input value="<?=$aluno['situacao']?>" type="text" name="situacao" id="situacao" readonly disabled>
+            </p>
+            
+            <button type="submit"  name="atualizar-dados">Atualizar dados do aluno</button>
+        </form>    
+    </div>
 
 
 
     <hr>
     <p><a href="visualizar.php">Voltar à lista de alunos</a></p>
 
-</div>
+</main>
 
 
 </body>
