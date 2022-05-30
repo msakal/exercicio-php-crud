@@ -1,3 +1,11 @@
+<?php 
+    require_once "src/funcoes-alunos.php";
+    $listaDeAlunos = lerAlunos($conexao);
+
+    // dump($listaDeProdutos);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,6 +28,36 @@ as páginas de atualização e exclusão. -->
 
 
     <p><a href="index.php">Voltar ao início</a></p>
+
+    <div class="alunos">
+            
+        <?php        
+            foreach ($listaDeAlunos as $aluno) {
+                
+            ?>     
+            <article>
+                <h3>Nome do Aluno..: <?=$aluno['nome']?></h3>
+                
+                <p>Primeira Nota..: <?=$aluno['primeira']?></p>
+                <p>Segunda Nota..: <?=$aluno['segunda']?></p>
+                <p>Média..: <?=$aluno['media']?></p>
+
+                <p>Situação..: <?=$aluno['situacao']?></p>
+                
+                 <p>
+                    <a class="atualizar" href="atualizar.php?id=<?=$aluno['id']?>" style="color: green;">Atualizar</a>
+                    &nbsp;  -  &nbsp;
+                    <a class="excluir" href="excluir.php?id=<?=$aluno['id']?>" style="color: red;">Excluir</a>
+                </p>
+
+                <hr>
+            </article>
+            <?php   
+            }
+            ?>
+
+    </div>
+
 </div>
 
 </body>

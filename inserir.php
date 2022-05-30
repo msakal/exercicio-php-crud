@@ -8,20 +8,20 @@
 </head>
 <body>
 <div class="container">
-	<h1>Cadastrar um novo aluno </h1>
+	<h1>Cadastrar um novo aluno</h1>
     <hr>
     		
     <p>Utilize o formulário abaixo para cadastrar um novo aluno.</p>
 
 	<form action="#" method="post">
 	    <p><label for="nome">Nome:</label>
-	    <input type="text" id="nome" required></p>
+	    <input type="text" id="nome" name="nome" required></p>
         
       <p><label for="primeira">Primeira nota:</label>
-	    <input type="number" id="primeira" step="0.1" min="0.0" max="10" required></p>
+	    <input type="number" id="primeira" name="primeira" step="0.1" min="0.0" max="10" required></p>
 	    
 	    <p><label for="segunda">Segunda nota:</label>
-	    <input type="number" id="segunda" step="0.1" min="0.0" max="10" required></p>
+	    <input type="number" id="segunda" name="segunda" step="0.1" min="0.0" max="10" required></p>
 	    
       <button>Cadastrar aluno</button>
 	</form>
