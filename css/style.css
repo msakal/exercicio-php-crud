@@ -21,18 +21,13 @@ a:hover, a:focus { text-decoration: underline;}
 /*  Table - Visualizar */
 table {
     border-collapse: collapse;
-    border: black 2px solid;
 }
-
-tr, td, th {
+table, tr, td, th, .notas {
     border: black 2px solid;
 }
 th {
     background: rgb(230, 222, 222);
     color: rgb(145, 117, 117);
-}
-.notas {
-    border: black 2px solid;
 }
 .center {
     text-align: center;
@@ -48,7 +43,15 @@ th {
     color: red;
     text-decoration: none;
 }
+.alunos {
+    box-sizing: border-box;
+    padding: 0 25%;
+    margin-bottom: 20px;
+}
 
+/* Seleção da classe pela Situação do Aluno - PHP
+Red     -> Reprovado
+Green   -> Aprovado */
 .corRed {
     background-color: rgb(250, 201, 201);
 }
@@ -57,13 +60,6 @@ th {
 }
 
 
-
-
-.alunos {
-    box-sizing: border-box;
-    padding: 0 25%;
-    margin-bottom: 20px;
-}
 
 /* Consulta e Inserção */
 /* Form */
@@ -109,7 +105,7 @@ main h4, div h4 {
     margin-left: 40%;
 }
 
-/* Opções de Retorno */
+/* Botão de Retorno */
 .opcReturn {
     border: #5a0506 2px solid;
     background-image: linear-gradient(#5c6bc0, #141291);
