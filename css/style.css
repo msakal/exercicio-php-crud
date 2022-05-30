@@ -41,11 +41,13 @@ td {
 .center {
     text-align: center;
 }
-.atualziar {
+.atualizar {
     color: green;
+    text-decoration: none;
 }
 .excluir {
     color: red;
+    text-decoration: none;
 }
 .sitAluno {
     --colorfundo: rgb(209, 248, 209);
@@ -111,6 +113,5 @@ main h4, div h4 {
     width: 30%;
     margin-bottom: 20px;
     padding: 5px;
-    /* margin-left: 40%; */
     text-decoration: none;
 }
