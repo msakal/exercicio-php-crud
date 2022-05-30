@@ -71,7 +71,7 @@
 
 
     <hr>
-    <p><a href="visualizar.php">Voltar à lista de alunos</a></p>
+    <p><a class="opcReturn" href="visualizar.php">Voltar à lista de alunos</a></p>
 
 </main>
 

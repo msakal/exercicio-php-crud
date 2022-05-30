@@ -57,7 +57,7 @@
         </form>
     </div>
     <hr>
-    <p><a href="../index.php">Voltar ao início</a></p>
+    <p><a class="opcReturn" href="../index.php">Voltar ao início</a></p>
 </main>
 
 </body>

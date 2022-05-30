@@ -56,28 +56,12 @@
     </div>
     <br>
     <hr>
-    <p><a href="inserir.php">Inserir novo aluno</a></p>
-    <p><a href="../index.php">Voltar ao início</a></p>
     
+    <div>
+        <p><a class="opcReturn" href="inserir.php">Inserir novo aluno</a></p>
+        <p><a class="opcReturn" href="../index.php">Voltar ao início</a></p>
+    </div>
 </div>
     <script src="../src/excluir.js"></script>
 </body>
 </html>
-
-<!-- <article>
-    <h3>Nome do Aluno..: <?=$aluno['nome']?></h3>
-    
-    <p>Primeira Nota..: <?=$aluno['primeira']?></p>
-    <p>Segunda Nota..: <?=$aluno['segunda']?></p>
-    <p>Média..: <?=$aluno['media']?></p>
-
-    <p>Situação..: <?=$aluno['situacao']?></p>
-    
-        <p>
-        <a class="atualizar" href="atualizar.php?id=<?=$aluno['id']?>" style="color: green;">Atualizar</a>
-        &nbsp;  -  &nbsp;
-        <a class="excluir" href="excluir.php?id=<?=$aluno['id']?>" style="color: red;">Excluir</a>
-    </p>
-
-    <hr>
-</article> -->
