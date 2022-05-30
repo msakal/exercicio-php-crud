@@ -1,10 +1,8 @@
 <?php
     
-    // Chamada inicial para Montar a 'Lista de Fabricantes'
     require_once "../src/funcoes-alunos.php";    
     $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
     $aluno = lerUmAluno($conexao, $id);
-
 
     if(isset($_POST['atualizar-dados'])) {
         $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -20,7 +18,6 @@
     }
   
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -50,16 +47,16 @@
             <p><label for="segunda">Segunda nota:</label>
             <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" required></p>
 
-            <p>
             <!-- Campo somente leitura e desabilitado para edição.
             Usado apenas para exibição do valor da média -->
+            <p>
                 <label for="media">Média:</label>
                 <input value="<?=$aluno['media']?>" name="media" type="number" id="media" step="0.1" min="0.0" max="10" readonly disabled>
             </p>
 
+             <!-- Campo somente leitura e desabilitado para edição.
+             Usado apenas para exibição do texto da situação -->
             <p>
-            <!-- Campo somente leitura e desabilitado para edição 
-            Usado apenas para exibição do texto da situação -->
                 <label for="situacao">Situação:</label>
                 <input value="<?=$aluno['situacao']?>" type="text" name="situacao" id="situacao" readonly disabled>
             </p>
@@ -68,13 +65,9 @@
         </form>    
     </div>
 
-
-
     <hr>
     <p><a class="opcReturn" href="visualizar.php">Voltar à lista de alunos</a></p>
-
 </main>
-
 
 </body>
 </html>

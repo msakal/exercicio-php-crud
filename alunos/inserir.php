@@ -1,8 +1,7 @@
 <?php 
-    // Chamada inicial para Montar a 'Lista de Fabricantes'
+    
     require_once "../src/funcoes-alunos.php";
 
-   
     // Verificando se o botão do formulário foi acionado
     if(isset ($_POST['inserir'])) {
         $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -56,6 +55,7 @@
             </div>
         </form>
     </div>
+    
     <hr>
     <p><a class="opcReturn" href="../index.php">Voltar ao início</a></p>
 </main>

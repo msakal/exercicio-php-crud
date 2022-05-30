@@ -24,7 +24,7 @@ table {
     border: black 2px solid;
 }
 
-tr {
+tr, td, th {
     border: black 2px solid;
 }
 th {
@@ -34,12 +34,11 @@ th {
 .notas {
     border: black 2px solid;
 }
-td {
-    border: black 2px solid;
-    background-color: var(--colorfundo);	
-}
 .center {
     text-align: center;
+}
+.left {
+    text-align: left;
 }
 .atualizar {
     color: green;
@@ -49,13 +48,20 @@ td {
     color: red;
     text-decoration: none;
 }
-.sitAluno {
-    --colorfundo: rgb(209, 248, 209);
+
+.corRed {
+    background-color: rgb(250, 201, 201);
 }
+.corGreen {
+    background-color: rgb(205, 236, 205);
+}
+
+
+
 
 .alunos {
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 0 25%;
     margin-bottom: 20px;
 }
 

@@ -1,7 +1,7 @@
 <?php
-require_once "conecta.php";
+    require_once "conecta.php";
 
-    // Ler Aluno
+    // LEITURA (LOOP),, Ler Aluno
     function lerAlunos(PDO $conexao):array {
         $sql = "SELECT alunos.id,
                     alunos.nome,
@@ -25,7 +25,8 @@ require_once "conecta.php";
     };
 
 
-    // Inserir Alunos
+
+    // INSERT,, Inserir Alunos
     function inserirAluno(PDO $conexao, string $nome, float $primeira, float $segunda, float $media, string $situacao):void {
         $sql = "INSERT INTO alunos(nome, primeira, segunda, media, situacao) 
         VALUES(:nome, :primeira, :segunda, :media, :situacao)";
@@ -45,7 +46,7 @@ require_once "conecta.php";
 
 
 
-    // Ler um Aluno
+    // LEITURA INDIVIDUAL,, Ler um Aluno
     function lerUmAluno(PDO $conexao, int $id):array {
         $sql = "SELECT id, nome, primeira, segunda, media, situacao FROM alunos
         WHERE id = :id"; 
@@ -65,13 +66,13 @@ require_once "conecta.php";
     };
 
 
-    // ATUALZIAÇÃO ,, Atualiziação de Aluno
+
+    // UPDATE ,, Atualização de Aluno
     function atualizarAluno(PDO $conexao, int $id, string $nome, float $primeira, float $segunda, float $media, string $situacao):void {
        
         $sql = "UPDATE alunos SET nome = :nome, primeira = :primeira, segunda = :segunda, media = :media, situacao = :situacao
         WHERE id = :id";
        
-
         try {   
             $consulta = $conexao->prepare($sql);
             $consulta->bindParam(':id', $id, PDO::PARAM_INT);
@@ -88,8 +89,7 @@ require_once "conecta.php";
 
 
 
-
-    // EXCLUSÃO,, Excluindo um Aluno
+    // DELETE,, Excluindo um Aluno
     function excluirAluno(PDO $conexao, int $id):void {
         $sql = "DELETE FROM alunos WHERE id = :id";
     
@@ -105,14 +105,15 @@ require_once "conecta.php";
     };
 
 
-
+    // Funções - Auxiliares
+    // Cor de Fundo
     function corDeFundo($media) {
-        $cor = "--colorFundo: green;";
-        if ( $media < 7 ) {
-            $cor = "--colorFundo: red;";
-        }
-    }
+        if ($media >= 7) {
+            $cor = "corGreen";
+        } else { $cor = "corRed"; }
 
+        return $cor;
+    }
 
     // Cálculo da Média
     function calcMedia(float $primeira, float $segunda):float {

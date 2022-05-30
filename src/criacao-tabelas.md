@@ -22,7 +22,6 @@ CREATE TABLE alunos(
 
 
 # CRUD
-
 ```sql
 INSERT INTO alunos (nome, primeira, segunda, media, situacao) VALUES(
     'Marcello S. Antunes',
