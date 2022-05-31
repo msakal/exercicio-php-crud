@@ -84,12 +84,20 @@ main h4, div h4 {
 } 
 .form input {
     border-radius: 5px;
-     /* cor de sombra - desl. x, desl. y, desfoque da sombra, tamanho da sombra.  */
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
     height: 30px;
     width: 70%;
     border: solid 1px #300040;
 }
+
+.form span {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+    height: 30px;
+    width: 270%;
+    border: solid 1px #300040;
+}
+
 .form input:hover {
     background-color: #fae7e7;
 }
