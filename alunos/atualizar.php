@@ -46,10 +46,10 @@
             <p><label for="nome">Nome:</label>
             <input value="<?=$aluno['nome']?>" type="text" name="nome" id="nome" required></p>
             
-            <p><label for="primeira">Primeira nota:</label>
+            <p><label for="primeira">Primeira Nota:</label>
             <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" oninput="calcMediaNt1()" required></p>
             
-            <p><label for="segunda">Segunda nota:</label>
+            <p><label for="segunda">Segunda Nota:</label>
             <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" oninput="calcMediaNt2()"required></p>
 
             <!-- Campo somente leitura e desabilitado para edição.

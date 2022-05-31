@@ -44,14 +44,14 @@
                     $cor = corDeFundo($aluno['media']);
             ?>     
                     <tr class="<?=$cor?>">
-                        <td><?=$aluno['nome']?></td>
+                        <td class="fw-semibold"><?=$aluno['nome']?></td>
                         <td class="center"><?=$aluno['primeira']?></td>
                         <td class="center"><?=$aluno['segunda']?></td>
                         <td class="center"><?=$aluno['media']?></td>
                         <td><?=$aluno['situacao']?></td>               
                         <td class="center">
-                            <a class="atualizar" href="atualizar.php?id=<?=$aluno['id']?>">Atualizar</a>&nbsp;&nbsp;
-                            <a class="excluir" href="excluir.php?id=<?=$aluno['id']?>">Excluir</a>
+                            <a class="atualizar fw-bold" href="atualizar.php?id=<?=$aluno['id']?>">Atualizar</a>&nbsp;&nbsp;
+                            <a class="excluir fw-bold" href="excluir.php?id=<?=$aluno['id']?>">Excluir</a>
                         </td>             
                     </tr>
                 <?php   
