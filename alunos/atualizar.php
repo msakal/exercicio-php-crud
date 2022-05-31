@@ -42,17 +42,21 @@
             <input value="<?=$aluno['nome']?>" type="text" name="nome" id="nome" required></p>
             
             <p><label for="primeira">Primeira nota:</label>
-            <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" required></p>
+            <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" oninput="atualizaMedia()" required></p>
             
             <p><label for="segunda">Segunda nota:</label>
             <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" required></p>
 
             <!-- Campo somente leitura e desabilitado para edição.
             Usado apenas para exibição do valor da média -->
+            
             <p>
                 <label for="media">Média:</label>
                 <input value="<?=$aluno['media']?>" name="media" type="number" id="media" step="0.1" min="0.0" max="10" readonly disabled>
             </p>
+
+            <p>teste</p>
+            <p id="result"></p>
 
              <!-- Campo somente leitura e desabilitado para edição.
              Usado apenas para exibição do texto da situação -->
@@ -68,6 +72,25 @@
     <hr>
     <p><a class="opcReturn" href="visualizar.php">Voltar à lista de alunos</a></p>
 </main>
+
+
+<!-- Atualização on-line (média e situação) -->
+<script>
+
+    function atualizaMedia() {
+        let nt1 = document.getElementById('primeira').value;
+        let nt2 = document.getElementById('segunda').value;
+        nt1 = parseFloat(nt1);
+        nt2 = parseFloat(nt2);
+        
+        // document.getElementById("media").innerHTML = (( nt1 + nt2 ) / 2);
+
+        let resultado = ( (nt1 + nt2) / 2);
+        document.getElementById('result').innerHTML = resultado;
+        
+    }
+
+</script>
 
 </body>
 </html>

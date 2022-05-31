@@ -113,7 +113,7 @@
         } else { $cor = "corRed"; }
 
         return $cor;
-    }
+    };
 
     // Cálculo da Média
     function calcMedia(float $primeira, float $segunda):float {
@@ -131,4 +131,5 @@
         return $situacao;
     };
 
+  
     ?>
