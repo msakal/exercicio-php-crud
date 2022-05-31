@@ -25,14 +25,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cadastrar um novo aluno - Exercício CRUD com PHP e MySQL</title>
+
+<!-- css bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!-- css próprio -->
 <link href="../css/style.css" rel="stylesheet">
+
 </head>
-<body>
+<body class="bg-light">
 <main class="container">
-	<h1>Cadastrar um novo aluno</h1>
+	<h1 class="text-center p-4 text-info">Cadastrar um novo aluno</h1>
     <hr>
     		
-    <h4>Utilize o formulário abaixo para cadastrar um novo aluno.</h4>
+    <h4 class="text-center p-4">Utilize o formulário abaixo para cadastrar um novo aluno.</h4>
     <div class="form">
         <form action="" method="post">
             <div>
@@ -57,7 +62,7 @@
     </div>
     
     <hr>
-    <p><a class="opcReturn" href="../index.php">Voltar ao início</a></p>
+    <p><a class="opcReturn text-decoration-none" href="../index.php">Voltar ao início</a></p>
 </main>
 
 </body>

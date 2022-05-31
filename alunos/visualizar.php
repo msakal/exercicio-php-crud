@@ -11,21 +11,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lista de alunos - Exercício CRUD com PHP e MySQL</title>
+
+<!-- css bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!-- css próprio -->
 <link href="../css/style.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="bg-light">
 <div class="container">
-    <h1>Lista de Alunos</h1>
+    <h1 class="text-center p-4 text-info">Lista de alunos</h1>
     <hr>
     
-    <h4>Consulte a Situação do aluno, utilize o formulário abaixo para manutenção.</h4>
+    <h4 class="text-center p-3">Consulte a situação do aluno, Utilize o formulário abaixo para manutenção.</h4>
 
     <div class="alunos">
         <table>
             <tr class="notas">
                 <th rowspan=2 class="center">Nome do Aluno</th>
-                <th colspan=3>Notas</th>
+                <th colspan=3 class="center">Notas</th>
                 <th rowspan=2 class="center">Situação</th>
                 <th colspan=2 rowspan=2></th>
             </tr>
@@ -58,8 +63,8 @@
     <hr>
     
     <div>
-        <p><a class="opcReturn" href="inserir.php">Inserir novo aluno</a>
-        <a class="opcReturn" href="../index.php">Voltar ao início</a></p>
+        <p><a class="opcReturn text-decoration-none" href="inserir.php">Inserir novo aluno</a>
+        <a class="opcReturn text-decoration-none" href="../index.php">Voltar ao início</a></p>
     </div>
 </div>
 

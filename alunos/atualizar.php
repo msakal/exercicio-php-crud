@@ -25,14 +25,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Atualizar dados - Exercício CRUD com PHP e MySQL</title>
+
+<!-- css bootstrap -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!-- css próprio -->
 <link href="../css/style.css" rel="stylesheet">
+
 </head>
-<body>
+<body class="bg-light">
 <main class="container">
-    <h1>Atualizar dados do aluno </h1>
+    <h1 class="text-center p-4 text-info">Atualizar dados do aluno</h1>
     <hr>
     		
-    <h4>Utilize o formulário abaixo para atualizar os dados do aluno.</h4>
+    <h4 class="text-center p-3">Utilize o formulário abaixo para atualizar os dados do aluno.</h4>
 
     <div class="form">
 
@@ -66,7 +71,7 @@
     </div>
 
     <hr>
-    <p><a class="opcReturn" href="visualizar.php">Voltar à lista de alunos</a></p>
+    <p><a class="opcReturn text-decoration-none" href="visualizar.php">Voltar à lista de alunos</a></p>
 </main>
 
 
