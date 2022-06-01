@@ -27,43 +27,36 @@
     <h4 class="text-center p-3">Consulte a situação do aluno, Utilize o formulário abaixo para manutenção.</h4>
 
     <div class="alunos">
-        <table class="table">
-            <thead>
-                <tr class="notas center">
-                    <th rowspan=2>Nome do Aluno</th>
-                    <th colspan=3>Notas</th>
-                    <th rowspan=2>Situação</th>
-                    <th colspan=2 rowspan=2></th>
-                </tr>
-                <tr>
-                    <th>&nbsp;Primeira&nbsp;</th>
-                    <th>&nbsp;Segunda&nbsp;</th>
-                    <th>&nbsp;Média&nbsp;</th>
-                </tr>
-            </thead>
-            <tbody>
+        <table>
+            <tr class="notas">
+                <th rowspan=2 class="center">Nome do Aluno</th>
+                <th colspan=3 class="center">Notas</th>
+                <th rowspan=2 class="center">Situação</th>
+                <th colspan=2 rowspan=2></th>
+            </tr>
+            <tr>
+                <th>&nbsp;Primeira&nbsp;</th>
+                <th>&nbsp;Segunda&nbsp;</th>
+                <th>&nbsp;Média&nbsp;</th>
+            </tr>
             <?php        
                 foreach ($listaDeAlunos as $aluno) {
                     $cor = corDeFundo($aluno['media']);
             ?>     
-                    
                     <tr class="<?=$cor?>">
                         <td class="fw-semibold"><?=$aluno['nome']?></td>
                         <td class="center"><?=$aluno['primeira']?></td>
                         <td class="center"><?=$aluno['segunda']?></td>
-                        <td class="center fw-bold"><?=$aluno['media']?></td>
+                        <td class="center"><?=$aluno['media']?></td>
                         <td><?=$aluno['situacao']?></td>               
                         <td class="center">
-                            <a class="atualizar fw-bold" href="atualizar.php?id=<?=$aluno['id']?>">Atualizar</a>
-                        </td> 
-                        <td class="center"> 
+                            <a class="atualizar fw-bold" href="atualizar.php?id=<?=$aluno['id']?>">Atualizar</a>&nbsp;&nbsp;
                             <a class="excluir fw-bold" href="excluir.php?id=<?=$aluno['id']?>">Excluir</a>
                         </td>             
                     </tr>
                 <?php   
                 }
                 ?>
-            </tbody>
         </table>
     </div>
     <br>
