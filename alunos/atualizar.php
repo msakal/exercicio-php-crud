@@ -47,10 +47,10 @@
             <input value="<?=$aluno['nome']?>" type="text" name="nome" id="nome" required></p>
             
             <p><label for="primeira">Primeira Nota:</label>
-            <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" oninput="calcMediaNt1()" required></p>
+            <input value="<?=$aluno['primeira']?>" name="primeira" type="number" id="primeira" step="0.1" min="0.0" max="10" oninput="calcMedia()" required></p>
             
             <p><label for="segunda">Segunda Nota:</label>
-            <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" oninput="calcMediaNt2()"required></p>
+            <input value="<?=$aluno['segunda']?>" name="segunda" type="number" id="segunda" step="0.1" min="0.0" max="10" oninput="calcMedia()"required></p>
 
             <!-- Campo somente leitura e desabilitado para edição.
             Usado apenas para exibição do valor da média -->
@@ -78,18 +78,7 @@
 <!-- Atualização on-line (média e situação) -->
 <script>
 
-    function calcMediaNt1() {
-        let nt1 = document.getElementById('primeira').value;
-        let nt2 = document.getElementById('segunda').value;
-        nt1 = parseFloat(nt1);
-        nt2 = parseFloat(nt2);
-        let resultado = ( (nt1 + nt2) / 2).toFixed(1);
-        document.getElementById('media').value = resultado;
-        newSituacao = checkSituacao(resultado);
-        document.getElementById('situacao').value = newSituacao;
-    }
-
-    function calcMediaNt2() {
+    function calcMedia() {
         let nt1 = document.getElementById('primeira').value;
         let nt2 = document.getElementById('segunda').value;
         nt1 = parseFloat(nt1);
