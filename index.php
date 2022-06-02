@@ -7,19 +7,19 @@
 
 <!-- css bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> -->
 
 <!-- css próprio -->
 <link href="css/style.css" rel="stylesheet">
 
 </head>
+
 <body class="bg-light">
+
 <div class="container">
     <h1 class="text-center p-4 text-info">Exercício - CRUD com PHP e MySQL</h1>
     <hr>
     <h2 class="text-center p-3">Gerenciamento de alunos, notas, médias e aprovação/reprovação</h2>
     <hr>
-    
     
     <div class="container mt-5">
         <div class="row text-center fs-3">
@@ -32,16 +32,17 @@
         </div>
     </div>
 
-    
-    
-    <!-- <ul>
-        <li><a href="alunos/visualizar.php">Visualizar Alunos</a></li>
-        <li><a href="alunos/inserir.php">Inserir novo aluno</a></li>
-    </ul> -->
 </div>
+<br>
 
-    <!-- BootStrap -->
-    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+<!-- Footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted px-2">&amp; 2022 Desenvolvido em Projeto de Aula (PHP/MySQL/BootStrap)</span>
+    </div>
+  </footer>
+</div>
 
 </body>
 </html>
