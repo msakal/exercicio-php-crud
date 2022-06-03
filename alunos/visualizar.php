@@ -12,10 +12,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lista de alunos - Exercício CRUD com PHP e MySQL</title>
 
+<!-- Paginação jQuery -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"> -->
+
+
 <!-- css bootstrap -->
 <link rel="stylesheet" href="../css/bootstrap.css">
 <!-- css próprio -->
-<link href="../css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
 
 </head>
 
@@ -27,6 +32,7 @@
     <h4 class="text-center p-3">Consulte a situação do aluno, Utilize o formulário abaixo para manutenção.</h4>
 
     <div class="alunos">
+        <!-- <table class="table display" id="table_id"> -->
         <table class="table">
             <thead>
                 <tr class="notas center">
@@ -40,13 +46,21 @@
                     <th>&nbsp;Segunda&nbsp;</th>
                     <th>&nbsp;Média&nbsp;</th>
                 </tr>
+                <!-- <tr class="notas center">
+                    <th>Nome do Aluno</th>
+                    <th>Nota B1</th>
+                    <th>Nota B2</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                    <th></th>
+                    <th></th>
+                </tr> -->
             </thead>
             <tbody>
             <?php        
                 foreach ($listaDeAlunos as $aluno) {
                     $cor = corDeFundo($aluno['media']);
-            ?>     
-                    
+            ?>
                     <tr class="<?=$cor?>">
                         <td class="fw-semibold"><?=$aluno['nome']?></td>
                         <td class="center"><?=$aluno['primeira']?></td>
@@ -76,5 +90,15 @@
 </div>
 
     <script src="../src/excluir.js"></script>
+
+    <!-- Paginação jQuery -->
+    <!-- <script src="../plugins/jquery-1.12.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script> -->
+
 </body>
 </html>
