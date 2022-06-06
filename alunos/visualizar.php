@@ -33,7 +33,7 @@
 
     <div class="alunos">
         <!-- <table class="table display" id="table_id"> -->
-        <table class="table">
+        <table class="table" id="table_id">
             <thead>
                 <tr class="notas center">
                     <th rowspan=2>Nome do Aluno</th>
@@ -46,6 +46,7 @@
                     <th>&nbsp;Segunda&nbsp;</th>
                     <th>&nbsp;Média&nbsp;</th>
                 </tr>
+
                 <!-- <tr class="notas center">
                     <th>Nome do Aluno</th>
                     <th>Nota B1</th>
