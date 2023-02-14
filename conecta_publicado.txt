@@ -1,0 +1,3 @@
+user.: crud_msakal
+senha: vy9a6Ev]CGEl
+bd...: alvoea33_crud_msa

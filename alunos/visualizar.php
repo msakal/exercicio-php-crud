@@ -13,14 +13,14 @@
 <title>Lista de alunos - Exercício CRUD com PHP e MySQL</title>
 
 <!-- Paginação jQuery -->
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
 
 
 <!-- css bootstrap -->
 <link rel="stylesheet" href="../css/bootstrap.css">
+
 <!-- css próprio -->
 <link rel="stylesheet" href="../css/style.css">
-
 
 </head>
 
@@ -35,7 +35,7 @@
         <!-- <table class="table display" id="table_id"> -->
         <table class="table" id="table_id">
             <thead>
-                <tr class="notas center">
+                <!-- <tr class="notas center">
                     <th rowspan=2>Nome do Aluno</th>
                     <th colspan=3>Notas</th>
                     <th rowspan=2>Situação</th>
@@ -45,9 +45,9 @@
                     <th>&nbsp;Primeira&nbsp;</th>
                     <th>&nbsp;Segunda&nbsp;</th>
                     <th>&nbsp;Média&nbsp;</th>
-                </tr>
+                </tr> -->
 
-                <!-- <tr class="notas center">
+                <tr class="notas center">
                     <th>Nome do Aluno</th>
                     <th>Nota B1</th>
                     <th>Nota B2</th>
@@ -55,7 +55,7 @@
                     <th>Situação</th>
                     <th></th>
                     <th></th>
-                </tr> -->
+                </tr>
             </thead>
             <tbody>
             <?php        
@@ -63,11 +63,13 @@
                     $cor = corDeFundo($aluno['media']);
             ?>
                     <tr class="<?=$cor?>">
+                        
                         <td class="fw-semibold"><?=$aluno['nome']?></td>
                         <td class="center"><?=$aluno['primeira']?></td>
                         <td class="center"><?=$aluno['segunda']?></td>
                         <td class="center fw-bold"><?=$aluno['media']?></td>
-                        <td><?=$aluno['situacao']?></td>               
+                        <td><?=$aluno['situacao']?></td>
+                                  
                         <td class="center">
                             <a class="atualizar fw-bold" href="atualizar.php?id=<?=$aluno['id']?>">Atualizar</a>
                         </td> 
@@ -93,13 +95,19 @@
     <script src="../src/excluir.js"></script>
 
     <!-- Paginação jQuery -->
-    <!-- <script src="../plugins/jquery-1.12.1.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <script src="../plugins/jquery-1.12.1.js"></script>
+    
+    <!-- acesso remoto -->
+    <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script> -->    
+    <!-- acesso local -->
+    <script type="text/javascript" charset="utf8" src="../plugins/jquery.dataTables.js"></script>
+
+    
     <script>
         $(document).ready( function () {
             $('#table_id').DataTable();
         } );
-    </script> -->
+    </script>
 
 </body>
 </html>
