@@ -61,7 +61,7 @@
             <?php        
                 foreach ($listaDeAlunos as $aluno) {
                     $cor = corDeFundo($aluno['media']);
-                    echo $cor;
+                    /* echo $cor; */
             ?>
                     <!-- <tr class="<?=$cor?>"> -->
                     <tr style="background:<?=$cor?>">

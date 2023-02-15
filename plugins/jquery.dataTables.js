@@ -11370,7 +11370,7 @@
        *      } );
        *    } );
        */
-      sInfo: "Mostrando _START_ para _END_ de _TOTAL_ entradas",
+      sInfo: "Exibindo _START_ ate _END_ total _TOTAL_ entradas",
 
       /**
        * Display information string for when the table is empty. Typically the
@@ -11390,7 +11390,7 @@
        *      } );
        *    } );
        */
-      sInfoEmpty: "Mostrando 0 para 0 de 0 entradas",
+      sInfoEmpty: "Exibindo 0 ate 0 total 0 entradas",
 
       /**
        * When a user filters the information in a table, this string is appended
@@ -11493,7 +11493,7 @@
        * with a default select list of 10, 25, 50 and 100, and can be replaced
        * with a custom select box if required.
        *  @type string
-       *  @default Mostrando _MENU_ entradas
+       *  @default Exibindo _MENU_ entradas
        *
        *  @dtopt Language
        *  @name DataTable.defaults.language.lengthMenu
@@ -11525,7 +11525,7 @@
        *      } );
        *    } );
        */
-      sLengthMenu: "Mostrando _MENU_ entradas",
+      sLengthMenu: "Exibindo _MENU_ entradas",
 
       /**
        * When using Ajax sourced data and during the first draw when DataTables is
