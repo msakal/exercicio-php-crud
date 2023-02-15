@@ -109,8 +109,12 @@
     // Cor de Fundo
     function corDeFundo($media) {
         if ($media >= 7) {
-            $cor = "corGreen";
-        } else { $cor = "corRed"; }
+            // $cor = "corGreen";
+            $cor = "rgb(205, 236, 205)";
+        } else { 
+            // $cor = "corRed"; 
+            $cor = "rgb(250, 201, 201)"; 
+        }
 
         return $cor;
     };
