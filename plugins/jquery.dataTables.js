@@ -11397,7 +11397,7 @@
        * to the information (`info`) to give an idea of how strong the filtering
        * is. The variable _MAX_ is dynamically updated.
        *  @type string
-       *  @default (filtered from _MAX_ total entries)
+       *  @default (filtrado total de _MAX_ entradas)
        *
        *  @dtopt Language
        *  @name DataTable.defaults.language.infoFiltered
@@ -11411,7 +11411,7 @@
        *      } );
        *    } );
        */
-      sInfoFiltered: "(filtered from _MAX_ total entries)",
+      sInfoFiltered: "(filtrado total de _MAX_ entradas)",
 
       /**
        * If can be useful to append extra information to the info string at times,
@@ -11642,7 +11642,7 @@
        * displayed after filtering. `emptyTable` is shown when there is simply no
        * information in the table at all (regardless of filtering).
        *  @type string
-       *  @default No matching records found
+       *  @default Nenhum registro correspondente encontrado
        *
        *  @dtopt Language
        *  @name DataTable.defaults.language.zeroRecords
@@ -11656,7 +11656,7 @@
        *      } );
        *    } );
        */
-      sZeroRecords: "No matching records found",
+      sZeroRecords: "Nenhum registro correspondente encontrado",
     },
 
     /**
